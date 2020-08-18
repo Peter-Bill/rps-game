@@ -101,3 +101,15 @@ function game() {;
     }
 
 }
+
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+
+    button.addEventListener('click', () => {
+
+
+        playRound(button.id, computerPlay());
+       let pick = document.querySelector('#playerpick');
+       pick.textContent = `Player Picked: ${button.id}`;
+    });
+});

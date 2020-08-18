@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                    <p class="h2 text-center">Computer</p>
+            </div>
+            <div class="col d-flex justify-content-center pt-5">
+                    <button id="rock" class="btn btn-primary mx-2">Rock</button>
+                    <button id="paper" class="btn btn-primary mx-2">Paper</button>
+                    <button id="scissors" class="btn btn-primary mx-2">Scissors</button>
+
+                    <p id="playerpick" class=""></p>
+                    <p id="comppick" class=""></p>
+            </div> 
+            <div class="col">
+                    <p class="h2 text-center">Player</p>
+            </div>
+
+        </div>
+    </div>
     <script src="rps.js"></script>
 </body>
 </html>
